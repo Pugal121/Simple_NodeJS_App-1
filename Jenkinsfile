@@ -17,7 +17,7 @@ pipeline {
     stages {
         stage('Checkout Github') {
             steps {
-                git branch: 'master', credentialsId: 'github-cred', url: 'https://github.com/Pugal121/Simple_NodeJS_App.git'
+                git branch: 'master', credentialsId: 'github-cred', url: 'https://github.com/Pugal121/Simple_NodeJS_App-1.git'
                 sh 'ls -la'  // Debugging step to check the files in workspace
             }
         }
